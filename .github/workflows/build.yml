@@ -33,7 +33,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Package AWS SAM Application
-        run: sam build --template template.yaml
+        run: sam build --template template.yml
       - name: Deploy AWS SAM Application
-        run: sam deploy --template-file .aws-sam/build/template.yaml --stack-name <stack_name> --capabilities CAPABILITY_IAM
+        run: sam deploy --template-file .aws-sam/build/template.yml --stack-name utez9B --capabilities CAPABILITY_IAM
 
