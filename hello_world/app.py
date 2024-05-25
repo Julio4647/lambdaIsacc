@@ -28,7 +28,8 @@ def lambda_handler(event, __):
     return {
         "statusCode": 200,
         "body": json.dumps({
-            "nombre_completo": "Julio Alberto Ocampo Villalobos",
+            "nombres": "Julio Alberto",
+            "apellidos": "Ocampo Villalobos",
             "grado": "9",
             "Grupo": "B"
         }),
